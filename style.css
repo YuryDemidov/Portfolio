@@ -1,5 +1,7 @@
 body {
+  min-width: 1000px;
   padding: 20px 50px;
+  padding-bottom: 50px;
 
   font-family: "Georgia", serif;
   font-size: 18px;
