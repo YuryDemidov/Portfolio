@@ -7,15 +7,16 @@
   <link href="style.css" rel="stylesheet">
 </head>
 <body>
-  <h1 class="title">Демидов Юрий</h1>
+  <h1 class="title">Юрий Демидов</h1>
   <p class="subtitle">Верстальщик / Junior Frontend Developer</p>
   <section class="site site--shopy">
-    <div class="site__preview">
-      <img class="site__picture site__picture--shopy" src="img/Shopy-preview.jpg" alt="">
+    <div class="site__preview preview">
+      <img class="preview__picture preview__picture--shopy" src="img/Shopy-preview.jpg" alt="">
+      <img class="site__picture site__picture--Shopy" src="Design/Shopy__Home.png" alt="">
     </div>
     <div class="site__info">
       <h2 class="site__name">Shopy</h2>
-      <p class="site__description">Трёхстраничный сайт магазина верхней одежды. Простая вёрстка, семантичный и валидный код с&nbsp;использованием препроцессора SASS, БЭМ.</p>
+      <p class="site__description">Трёхстраничный сайт магазина верхней одежды. Простая вёрстка, семантичный и валидный код с&nbsp;использованием препроцессора SASS и методологии БЭМ.</p>
       <div class="site__code">
         <a href="https://yurydemidov.github.io/Portfolio/Shopy/index.html">Сайт вживую</a><br>
         <a href="https://github.com/YuryDemidov/Shopy"> Репозиторий на GitHub</a>
@@ -29,14 +30,22 @@
         </ul>
       </div>
     </div>
+    <div class="preview__description">
+      <p class="description description--first">Все мелкие изображения — части спрайтов svg/png</p>
+      <p class="description description--second">Действующие страницы сайта — Home, Products, Hot Deals</p>
+      <p class="description description--third">Продумал логику переключения товаров спецпредложений, которую можно реализовать на JS</p>
+      <p class="description description--fourth">Реализовал маску при наведении на товар</p>
+      <p class="description description--fifth">Вёрстка валидна, соответствует правилам семантики, написана по методологии БЭМ и в соответствии со стайлгайдом HTML Academy</p>
+    </div>
   </section>
   <section class="site site--sparta">
-    <div class="site__preview">
-      <img class="site__picture site__picture--shopy" src="img/Sparta-preview.jpg" alt="">
+    <div class="site__preview preview">
+      <img class="preview__picture preview__picture--sparta" src="img/Sparta-preview.jpg" alt="">
+      <img class="site__picture site__picture--sparta" src="Design/Sparta--1170.png" alt="">
     </div>
     <div class="site__info">
       <h2 class="site__name">Sparta</h2>
-      <p class="site__description">Адаптивный лендинг проекта по&nbsp;экстремальному выживанию «Sparta». Мобильная и&nbsp;планшетная версия, сложные элементы свёрстаны не&nbsp;картинками, а&nbsp;средствами HTML и&nbsp;CSS.</p>
+      <p class="site__description">Адаптивный лендинг проекта по&nbsp;экстремальному выживанию «Sparta». Три версии для различной ширины экранов. Помимо вёрстки с&nbsp;помощью JavaScript запрограммированы основные интерактивные элементы страницы.</p>
       <div class="site__code">
         <a href="https://yurydemidov.github.io/Portfolio/Sparta/index.html">Сайт вживую</a><br>
         <a href="https://github.com/YuryDemidov/Sparta">Репозиторий на GitHub</a>
@@ -49,6 +58,22 @@
           <li><a href="Design/Sparta--1170.png">Десктопная версия</a></li>
         </ul>
       </div>
+    </div>
+    <div class="preview__description">
+      <p class="description description--first">Изображения адаптировал к ширине экрана: контентные с помощью <code>&lt;picture&gt;</code>, фоновые — посредством медиа-выражений</p>
+      <p class="description description--second">Через <code>@font-face</code> подключил различные шрифты</p>
+      <p class="description description--third">Запрограммировал открытие/закрытие поп-апа при нажатии на кнопку «Рискнуть»</p>
+      <p class="description description--fourth">Для снижения «веса» страницы тень заголовка сделал псевдоэлементом, а не картинкой</p>
+      <p class="description description--fifth">В этом разделе сетки как таковой нет, поэтому реализовал с помощью margin'ов и padding'ов. Также сделал резиновое поведение на планшетной ширине</p>
+      <p class="description description--sixth">Нестандартная рамка с помощью border-image</p>
+      <p class="description description--seventh">Кастомизированный нумерованный список</p>
+      <p class="description description--eight">Для цифр использовал растровый спрайт, чтобы снизить количество запросов к серверу</p>
+      <p class="description description--ninth">Сделал раскладку и на флексах, и на гридах. Гриды понравились больше :&#41;</p>
+      <p class="description description--tenth">Галерея на широких экранах, а в мобильной версии слайдер на нативном JS</p>
+      <p class="description description--eleventh">Написал скрипт для активации контролов при наведении</p>
+      <p class="description description--twelfth">Реализовал открытие всего текста отзыва с помощью JS</p>
+      <p class="description description--thirteenth">Форма по правилам юзабилити: она выводит ошибку в нужный момент, валидирует номер телефона, проверяет, что все необходимые поля заполнены</p>
+      <p class="description description--fourteenth">Вёрстка валидна, соответствует правилам семантики, написана по методологии БЭМ и в соответствии со стайлгайдом HTML Academy</p>
     </div>
   </section>
   <section class="about-me">
@@ -65,5 +90,6 @@
     </ul>
     <p>Буду рад письму: <a href="mailto:demiddinamit@mail.ru">demiddinamit@mail.ru</a></p>
   </section>
+  <script src="script.js"></script>
 </body>
 </html>

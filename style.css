@@ -5,6 +5,7 @@ body {
 
   font-family: "Georgia", serif;
   font-size: 18px;
+  line-height: 1.3;
 
   background-color: #f4f4f4;
 }
@@ -22,25 +23,39 @@ body {
 .site {
   display: flex;
   margin-bottom: 50px;
-  padding: 15px;
+  padding: 15px 0;
 }
 
 .site__preview {
-  width: 55%;
-  margin-right: 5%;
-}
-
-.site__picture {
-  display: block;
-  width: 100%;
+  width: 62%;
+  margin-right: 3%;
 
   border: 1px solid #aaaaaa;
+}
+
+.site__preview:hover {
+  border-color: #ff0000;
+
+  cursor: pointer;
+}
+
+.preview__picture {
+  display: block;
+  width: 100%;
+}
+
+.preview__picture--invisible {
+  display: none;
 }
 
 .site__info {
   display: flex;
   flex-direction: column;
   width: 35%;
+}
+
+.site-info--invisible {
+  display: none;
 }
 
 .site__name {
@@ -127,4 +142,91 @@ body {
 
 .about-me a:hover {
   border-bottom: 1px solid #3388dd;
+}
+
+/* Hidden block with preview description
+initialized with JS by clicking on preview picture*/
+
+.site--shopy .preview--active {
+  border-color: #ff5912;
+
+  cursor: pointer;
+}
+
+.site--sparta .preview--active {
+  border-color: #ff0000;
+
+  cursor: pointer;
+}
+
+.preview__description {
+  display: none;
+}
+
+.preview__description--visible {
+  display: block;
+  width: 35%;
+}
+
+.site__picture {
+  display: none;
+}
+
+.site__picture--visible {
+  display: block;
+  width: 100%;
+}
+
+.site--shopy .description--first {
+  margin-top: 0;
+}
+
+.site--shopy .description--third {
+  margin-top: 110px;
+}
+
+.site--shopy .description--fourth {
+  margin-top: 280px;
+}
+
+.site--shopy .description--fifth {
+  margin-top: 750px;
+  margin-bottom: 0;
+}
+
+.site--sparta .description--third {
+  margin-top: 110px;
+}
+
+.site--sparta .description--fourth {
+  margin-top: 140px;
+}
+
+.site--sparta .description--sixth {
+  margin-top: 500px;
+}
+
+.site--sparta .description--eight {
+  margin-top: 360px;
+}
+
+.site--sparta .description--tenth {
+  margin-top: 1350px;
+}
+
+.site--sparta .description--eleventh {
+  margin-top: 800px;
+}
+
+.site--sparta .description--twelfth {
+  margin-top: 340px;
+}
+
+.site--sparta .description--thirteenth {
+  margin-top: 500px;
+}
+
+.site--sparta .description--fourteenth {
+  margin-top: 130px;
+  margin-bottom: 0;
 }
