@@ -20,6 +20,13 @@ body {
   font-size: 20px;
 }
 
+.notification {
+  margin-bottom: 0;
+
+  font-size: 14px;
+  color: #666666;
+}
+
 .site {
   display: flex;
   margin-bottom: 50px;
