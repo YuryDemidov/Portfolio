@@ -1,6 +1,10 @@
 body {
-  min-width: 1000px;
+  min-width: 1040px;
+  max-width: 1340px;
+  box-sizing: border-box;
+  margin: 0 auto;
   padding: 20px 50px;
+  padding-right: 20px;
   padding-bottom: 50px;
 
   font-family: "Georgia", serif;
@@ -34,10 +38,38 @@ body {
 }
 
 .site__preview {
-  width: 62%;
+  position: relative;
+
+  flex-shrink: 0;
+  width: 650px;
   margin-right: 3%;
 
   border: 1px solid #aaaaaa;
+}
+
+.preview__open-btn {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+
+  width: 300px;
+  height: 60px;
+
+  font-size: 14px;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: #ffffff;
+
+  background-color: rgba(0, 0, 0, 0.5);
+  border: none;
+  border-radius: 15px;
+  cursor: pointer;
+
+  transform: translateX(-50%);
+}
+
+.preview__open-btn:hover {
+  background-color: rgba(0, 0, 0, 0.65);
 }
 
 .site__preview:hover {
@@ -167,12 +199,26 @@ initialized with JS by clicking on preview picture*/
 }
 
 .preview__description {
+  position: relative;
+
   display: none;
 }
 
 .preview__description--visible {
   display: block;
   width: 35%;
+}
+
+.preview__flex-container {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 .site__picture {
@@ -185,55 +231,83 @@ initialized with JS by clicking on preview picture*/
 }
 
 .site--shopy .description--first {
-  margin-top: 0;
+  min-height: 45px;
+  margin: 0;
+}
+
+.site--shopy .description--second {
+  margin-top: 10px;
 }
 
 .site--shopy .description--third {
-  margin-top: 110px;
+  margin-top: 70px;
 }
 
 .site--shopy .description--fourth {
-  margin-top: 280px;
+  margin-top: 210px;
 }
 
-.site--shopy .description--fifth {
-  margin-top: 750px;
-  margin-bottom: 0;
+.site--sparta .description--first {
+  min-height: 95px;
+  margin: 0;
+}
+
+.site--sparta .description--second {
+  min-height: 50px;
 }
 
 .site--sparta .description--third {
-  margin-top: 110px;
+  min-height: 70px;
+  margin-top: 20px;
 }
 
 .site--sparta .description--fourth {
-  margin-top: 140px;
+  min-height: 70px;
+  margin-top: 60px;
+}
+
+.site--sparta .description--fifth {
+  min-height: 140px;
 }
 
 .site--sparta .description--sixth {
-  margin-top: 500px;
+  min-height: 45px;
+  margin-top: 310px;
+  margin-bottom: 0;
+}
+
+.site--sparta .description--seventh {
+  min-height: 45px;
 }
 
 .site--sparta .description--eight {
-  margin-top: 360px;
+  min-height: 70px;
+  margin-top: 270px;
+  margin-bottom: 0;
 }
 
 .site--sparta .description--tenth {
-  margin-top: 1350px;
+  min-height: 70px;
+  margin-top: 1050px;
 }
 
 .site--sparta .description--eleventh {
-  margin-top: 800px;
+  margin-top: 630px;
 }
 
 .site--sparta .description--twelfth {
-  margin-top: 340px;
+  margin-top: 250px;
 }
 
 .site--sparta .description--thirteenth {
-  margin-top: 500px;
+  margin-top: 400px;
 }
 
-.site--sparta .description--fourteenth {
-  margin-top: 130px;
-  margin-bottom: 0;
+.description:nth-last-child(2) {
+  margin-bottom: auto;
+}
+
+.description:last-child {
+  margin-top: auto;
+  margin-bottom: 10px;
 }

@@ -9,9 +9,9 @@
 <body>
   <h1 class="title">Юрий Демидов</h1>
   <p class="subtitle">Верстальщик / Junior Frontend Developer</p>
-  <p class="notification">Нажмите на картинку, чтобы открыть полное изображение с моими комментариями</p>
   <section class="site site--shopy">
     <div class="site__preview preview">
+      <button class="preview__open-btn" type="button">Посмотреть комментарии</button>
       <img class="preview__picture preview__picture--shopy" src="img/Shopy-preview.jpg" alt="">
       <img class="site__picture site__picture--Shopy" src="Design/Shopy__Home.png" alt="">
     </div>
@@ -32,15 +32,18 @@
       </div>
     </div>
     <div class="preview__description">
-      <p class="description description--first">Все мелкие изображения — части спрайтов svg/png</p>
-      <p class="description description--second">Действующие страницы сайта — Home, Products, Hot Deals</p>
-      <p class="description description--third">Продумал логику переключения товаров спецпредложений, которую можно реализовать на JS</p>
-      <p class="description description--fourth">Реализовал маску при наведении на товар</p>
-      <p class="description description--fifth">Вёрстка валидна, соответствует правилам семантики, написана по методологии БЭМ и в соответствии со стайлгайдом HTML Academy</p>
+      <div class="preview__flex-container">
+        <p class="description description--first">Все мелкие изображения&nbsp;— части спрайтов svg/png</p>
+        <p class="description description--second">Действующие страницы сайта&nbsp;— Home, Products, Hot Deals</p>
+        <p class="description description--third">Продумал логику переключения товаров спецпредложений, которую можно реализовать на JS</p>
+        <p class="description description--fourth">Реализовал маску при наведении на товар</p>
+        <p class="description description--fifth">Вёрстка валидна, соответствует правилам семантики, написана по методологии БЭМ и в соответствии со стайлгайдом HTML Academy</p>
+      </div>
     </div>
   </section>
   <section class="site site--sparta">
     <div class="site__preview preview">
+      <button class="preview__open-btn" type="button">Посмотреть комментарии</button>
       <img class="preview__picture preview__picture--sparta" src="img/Sparta-preview.jpg" alt="">
       <img class="site__picture site__picture--sparta" src="Design/Sparta--1170.png" alt="">
     </div>
@@ -61,20 +64,22 @@
       </div>
     </div>
     <div class="preview__description">
-      <p class="description description--first">Изображения адаптировал к ширине экрана: контентные с помощью <code>&lt;picture&gt;</code>, фоновые — посредством медиа-выражений</p>
-      <p class="description description--second">Через <code>@font-face</code> подключил различные шрифты</p>
-      <p class="description description--third">Запрограммировал открытие/закрытие поп-апа при нажатии на кнопку «Рискнуть»</p>
-      <p class="description description--fourth">Для снижения «веса» страницы тень заголовка сделал псевдоэлементом, а не картинкой</p>
-      <p class="description description--fifth">В этом разделе сетки как таковой нет, поэтому реализовал с помощью margin'ов и padding'ов. Также сделал резиновое поведение на планшетной ширине</p>
-      <p class="description description--sixth">Нестандартная рамка с помощью border-image</p>
-      <p class="description description--seventh">Кастомизированный нумерованный список</p>
-      <p class="description description--eight">Для цифр использовал растровый спрайт, чтобы снизить количество запросов к серверу</p>
-      <p class="description description--ninth">Сделал раскладку и на флексах, и на гридах. Гриды понравились больше :&#41;</p>
-      <p class="description description--tenth">Галерея на широких экранах, а в мобильной версии слайдер на нативном JS</p>
-      <p class="description description--eleventh">Написал скрипт для активации контролов при наведении</p>
-      <p class="description description--twelfth">Реализовал открытие всего текста отзыва с помощью JS</p>
-      <p class="description description--thirteenth">Форма по правилам юзабилити: она выводит ошибку в нужный момент, валидирует номер телефона, проверяет, что все необходимые поля заполнены</p>
-      <p class="description description--fourteenth">Вёрстка валидна, соответствует правилам семантики, написана по методологии БЭМ и в соответствии со стайлгайдом HTML Academy</p>
+      <div class="preview__flex-container">
+        <p class="description description--first">Изображения адаптировал к ширине экрана: контентные с помощью <code>&lt;picture&gt;</code>, фоновые — посредством медиа-выражений</p>
+        <p class="description description--second">Через <code>@font-face</code> подключил различные шрифты</p>
+        <p class="description description--third">Запрограммировал открытие/закрытие поп-апа при нажатии на кнопку «Рискнуть»</p>
+        <p class="description description--fourth">Для снижения «веса» страницы тень заголовка сделал псевдоэлементом, а не картинкой</p>
+        <p class="description description--fifth">В этом разделе сетки как таковой нет, поэтому реализовал с помощью margin'ов и padding'ов. Также сделал резиновое поведение на планшетной ширине</p>
+        <p class="description description--sixth">Нестандартная рамка с помощью border-image</p>
+        <p class="description description--seventh">Кастомизированный нумерованный список</p>
+        <p class="description description--eight">Для цифр использовал растровый спрайт, чтобы снизить количество запросов к серверу</p>
+        <p class="description description--ninth">Сделал раскладку и на флексах, и на гридах. Гриды понравились больше :&#41;</p>
+        <p class="description description--tenth">Галерея на широких экранах, а в мобильной версии слайдер на нативном JS</p>
+        <p class="description description--eleventh">Написал скрипт для активации контролов при наведении</p>
+        <p class="description description--twelfth">Реализовал открытие всего текста отзыва с помощью JS</p>
+        <p class="description description--thirteenth">Форма по правилам юзабилити: она выводит ошибку в нужный момент, валидирует номер телефона, проверяет, что все необходимые поля заполнены</p>
+        <p class="description description--fourteenth">Вёрстка валидна, соответствует правилам семантики, написана по методологии БЭМ и в соответствии со стайлгайдом HTML Academy</p>
+      </div>
     </div>
   </section>
   <section class="about-me">
