@@ -1,34 +1,34 @@
 var previewPicture = document.querySelectorAll('.preview__picture');
 var sitePicture = document.querySelectorAll('.site__picture');
-var borderBlock = document.querySelectorAll('.preview');
 var siteInfo = document.querySelectorAll('.site__info');
 var previewDescription = document.querySelectorAll('.preview__description');
-var btnOpen = document.querySelectorAll('.preview__open-btn');
+var btnOpen = document.querySelectorAll('.preview__btn--open');
+var btnClose = document.querySelectorAll('.preview__btn--close');
 
-var rebuildSite = function(visibleLeftColumn, unvisibleLeftColumn, leftBlockBorder, visibleRightColumn, unvisibleRightColumn, siteNumber) {
+var rebuildSite = function(visibleLeftColumn, unvisibleLeftColumn, visibleRightColumn, unvisibleRightColumn, siteNumber) {
     btnOpen[siteNumber].addEventListener('click', function() {
       visibleLeftColumn[siteNumber].classList.add('preview__picture--invisible');
       unvisibleLeftColumn[siteNumber].classList.add('site__picture--visible');
-      leftBlockBorder[siteNumber].classList.add('preview--active');
       visibleRightColumn[siteNumber].classList.add('site-info--invisible');
       unvisibleRightColumn[siteNumber].classList.add('preview__description--visible');
       btnOpen[siteNumber].style = "display: none;";
+      btnClose[siteNumber].style = "display: inline-block;";
     });
   return;
 }
 
-var goBackPlease = function(visibleLeftColumn, unvisibleLeftColumn, leftBlockBorder, visibleRightColumn, unvisibleRightColumn, siteNumber) {
-    unvisibleLeftColumn[siteNumber].addEventListener('click', function() {
+var goBackPlease = function(visibleLeftColumn, unvisibleLeftColumn, visibleRightColumn, unvisibleRightColumn, siteNumber) {
+    btnClose[siteNumber].addEventListener('click', function() {
       visibleLeftColumn[siteNumber].classList.remove('preview__picture--invisible');
       unvisibleLeftColumn[siteNumber].classList.remove('site__picture--visible');
-      leftBlockBorder[siteNumber].classList.remove('preview--active');
       visibleRightColumn[siteNumber].classList.remove('site-info--invisible');
       unvisibleRightColumn[siteNumber].classList.remove('preview__description--visible');
       btnOpen[siteNumber].style = "display: inline-block;";
+      btnClose[siteNumber].style = "display: none;";
     });
 }
 
-rebuildSite(previewPicture, sitePicture, borderBlock, siteInfo, previewDescription, 0);
-rebuildSite(previewPicture, sitePicture, borderBlock, siteInfo, previewDescription, 1);
-goBackPlease(previewPicture, sitePicture, borderBlock, siteInfo, previewDescription, 0);
-goBackPlease(previewPicture, sitePicture, borderBlock, siteInfo, previewDescription, 1);
+rebuildSite(previewPicture, sitePicture, siteInfo, previewDescription, 0);
+rebuildSite(previewPicture, sitePicture, siteInfo, previewDescription, 1);
+goBackPlease(previewPicture, sitePicture, siteInfo, previewDescription, 0);
+goBackPlease(previewPicture, sitePicture, siteInfo, previewDescription, 1);

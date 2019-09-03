@@ -5,13 +5,16 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Yury Demidov Portfolio</title>
   <link href="style.css" rel="stylesheet">
+  <link rel="icon" href="img/favicon.png" sizes="16x16" type="image/png">
+  <link rel="icon" href="img/favicon.svg" sizes="any" type="image/svg+xml">
 </head>
 <body>
   <h1 class="title">Юрий Демидов</h1>
   <p class="subtitle">Верстальщик / Junior Frontend Developer</p>
   <section class="site site--shopy">
     <div class="site__preview preview">
-      <button class="preview__open-btn" type="button">Посмотреть комментарии</button>
+      <button class="preview__btn preview__btn--open" type="button">Посмотреть комментарии</button>
+      <button class="preview__btn preview__btn--close" type="button">Скрыть комментарии</button>
       <img class="preview__picture preview__picture--shopy" src="img/Shopy-preview.jpg" alt="">
       <img class="site__picture site__picture--Shopy" src="Design/Shopy__Home.png" alt="">
     </div>
@@ -43,7 +46,8 @@
   </section>
   <section class="site site--sparta">
     <div class="site__preview preview">
-      <button class="preview__open-btn" type="button">Посмотреть комментарии</button>
+      <button class="preview__btn preview__btn--open" type="button">Посмотреть комментарии</button>
+      <button class="preview__btn preview__btn--close" type="button">Скрыть комментарии</button>
       <img class="preview__picture preview__picture--sparta" src="img/Sparta-preview.jpg" alt="">
       <img class="site__picture site__picture--sparta" src="Design/Sparta--1170.png" alt="">
     </div>
@@ -68,8 +72,8 @@
         <p class="description description--first">Изображения адаптировал к ширине экрана: контентные с помощью <code>&lt;picture&gt;</code>, фоновые — посредством медиа-выражений</p>
         <p class="description description--second">Через <code>@font-face</code> подключил различные шрифты</p>
         <p class="description description--third">Запрограммировал открытие/закрытие поп-апа при нажатии на кнопку «Рискнуть»</p>
-        <p class="description description--fourth">Для снижения «веса» страницы тень заголовка сделал псевдоэлементом, а не картинкой</p>
-        <p class="description description--fifth">В этом разделе сетки как таковой нет, поэтому реализовал с помощью margin'ов и padding'ов. Также сделал резиновое поведение на планшетной ширине</p>
+        <p class="description description--fourth">Для снижения веса страницы тень заголовка сделал псевдоэлементом, а не картинкой</p>
+        <p class="description description--fifth"></p>
         <p class="description description--sixth">Нестандартная рамка с помощью border-image</p>
         <p class="description description--seventh">Кастомизированный нумерованный список</p>
         <p class="description description--eight">Для цифр использовал растровый спрайт, чтобы снизить количество запросов к серверу</p>
@@ -83,16 +87,16 @@
     </div>
   </section>
   <section class="about-me">
-    <p>Меня зовут Юрий Демидов, я начинающий фронтенд-разработчик.</p>
+    <p>Меня зовут Юрий Демидов, я начинающий фронтенд-разработчик. Вот, что я могу рассказать о&nbsp;себе:</p>
     <ul>
-      <li>Отлично знаю HTML и CSS, в том числе последние возможности стандартов HTML5 и CSS3 (флексбокс, гриды, анимации и др.)</li>
-      <li>Понимаю особенности основных браузеров, верстаю страницы кроссбраузерно с использованием семантичной разметки и методологии БЭМ. Могу реализовать статичный, адаптивный и отзывчивый дизайн</li>
-      <li>Умею верстать макеты Photoshop и Figma при необходимости по технике Pixel-perfect</li>
-      <li>Работаю с препроцессором SASS, также знаком с LESS</li>
-      <li>Имею опыт работы с системой контроля версий Git через консоль, знаком с работой в GitHub</li>
-      <li>Умею автоматизироавть работу с кодом при помощи Gulp</li>
-      <li>Владею базовым JS, знаком с библиотекой Jquery</li>
-      <li>Исполнительный, внимательный, ответственный, соблюдаю сроки, умею общаться с командой дизайнеров. Люблю и хочу учиться чему-то новому</li>
+      <li>Отлично знаю HTML и&nbsp;CSS, в&nbsp;том числе последние возможности стандартов HTML5 и&nbsp;CSS3 (флексбокс, гриды, анимации и&nbsp;др.)</li>
+      <li>Понимаю особенности основных браузеров, верстаю страницы кроссбраузерно с&nbsp;использованием семантичной разметки и&nbsp;методологии БЭМ. Могу реализовать статичный, адаптивный и&nbsp;отзывчивый дизайн</li>
+      <li>Умею верстать макеты Photoshop и&nbsp;Figma, в&nbsp;том числе Pixel-perfect</li>
+      <li>Работаю с&nbsp;препроцессором SASS, также знаком с&nbsp;LESS</li>
+      <li>Работаю с&nbsp;системой контроля версий Git через консоль, знаком с&nbsp;работой в GitHub</li>
+      <li>Умею автоматизировать работу с&nbsp;кодом при помощи Gulp</li>
+      <li>Владею базовым JS, знаком с&nbsp;библиотекой Jquery</li>
+      <li>Исполнительный, внимательный, ответственный, соблюдаю сроки, умею общаться с&nbsp;командой дизайнеров. Люблю и&nbsp;хочу учиться чему-то новому</li>
     </ul>
     <p>Буду рад письму: <a href="mailto:demiddinamit@mail.ru">demiddinamit@mail.ru</a></p>
   </section>
