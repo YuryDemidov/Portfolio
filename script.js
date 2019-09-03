@@ -1,3 +1,6 @@
+// Script changes preview-photo to site photo and shows comments
+// instead of site info
+
 var previewPicture = document.querySelectorAll('.preview__picture');
 var sitePicture = document.querySelectorAll('.site__picture');
 var siteInfo = document.querySelectorAll('.site__info');
@@ -28,7 +31,8 @@ var goBackPlease = function(visibleLeftColumn, unvisibleLeftColumn, visibleRight
     });
 }
 
-rebuildSite(previewPicture, sitePicture, siteInfo, previewDescription, 0);
-rebuildSite(previewPicture, sitePicture, siteInfo, previewDescription, 1);
-goBackPlease(previewPicture, sitePicture, siteInfo, previewDescription, 0);
-goBackPlease(previewPicture, sitePicture, siteInfo, previewDescription, 1);
+for (var i = 0; i < previewPicture.length; i++) {
+  rebuildSite(previewPicture, sitePicture, siteInfo, previewDescription, i);
+  goBackPlease(previewPicture, sitePicture, siteInfo, previewDescription, i);
+}
+
