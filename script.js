@@ -29,6 +29,7 @@ var goBackPlease = function(visibleLeftColumn, unvisibleLeftColumn, visibleRight
       btnOpen[siteNumber].style = "display: inline-block;";
       btnClose[siteNumber].style = "display: none;";
     });
+  return;
 }
 
 for (var i = 0; i < previewPicture.length; i++) {

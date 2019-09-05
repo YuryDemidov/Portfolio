@@ -56,8 +56,9 @@ body {
   top: 300px;
   left: 50%;
 
-  width: 300px;
+  width: 320px;
   height: 60px;
+  padding: 0 15px;
 
   font-size: 14px;
   font-weight: bold;
