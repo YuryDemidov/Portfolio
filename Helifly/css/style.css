@@ -1370,7 +1370,7 @@ html {
         border-color: currentColor; } }
 
 @media (min-width: 1170px) {
-  .reviews {
+  .reviews.hidden {
     padding-top: 105px; } }
 
 .review {
@@ -1572,6 +1572,8 @@ html {
     text-align: right; } }
 
 @media (min-width: 1170px) {
+  .page-footer__top {
+    padding-top: 48px; }
   .page-footer__info {
     margin-left: 19%; }
   .page-footer__support, .page-footer__copyright {
@@ -1589,7 +1591,8 @@ html {
       transform: scale(1.1); }
 
 .hidden {
-  border: none; }
+  border: none;
+  padding: 0; }
   .hidden__content {
     display: none; }
   .hidden__photo {
