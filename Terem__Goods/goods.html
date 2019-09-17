@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Goods</title>
+  <link href="css/style.min.css" rel="stylesheet">
+</head>
+<body>
+  <svg class="svg-icon-def visually-hidden" xmlns="http://www.w3.org/2000/svg">
+    <defs>
+      <symbol id="cart-icon" viewBox="0 0 11 11">
+        <path xmlns="http://www.w3.org/2000/svg" d="M3.3 8.79a1.1 1.1 0 101.1 1.1 1.105 1.105 0 00-1.1-1.1zM.005.01v1.1h1.1l1.977 4.17-.769 1.32a1.885 1.885 0 00-.109.55 1.1 1.1 0 001.1 1.09h6.588V7.15H3.523a.123.123 0 01-.11-.11v-.06l.5-.93h4.063a1 1 0 00.933-.55l1.977-3.57a.3.3 0 00.109-.27.519.519 0 00-.549-.55H2.32L1.826.01H.014zM8.79 8.79a1.1 1.1 0 101.1 1.1 1.105 1.105 0 00-1.096-1.1z" fill-rule="evenodd"></path>
+      </symbol>
+      <symbol id="comment-icon" viewBox="0 0 12 12">
+        <path xmlns="http://www.w3.org/2000/svg" d="M-.013 9.07h3.229v2.72l2.919-2.72h6.007V.01H-.013v9.06zM.367.42h11.395v8.24H5.994l-2.4 2.23V8.66H.367V.42z" fill-rule="evenodd" opacity=".4"></path>
+      </symbol>
+      <symbol id="star-icon" viewBox="0 0 13 13">
+        <path xmlns="http://www.w3.org/2000/svg" d="M2.655 13.46a.23.23 0 01-.139-.04.271.271 0 01-.094-.25l.733-4.56L.047 5.39a.272.272 0 01-.06-.26.237.237 0 01.192-.17l4.3-.67L6.4.15a.23.23 0 01.213-.14.23.23 0 01.213.14l1.92 4.14 4.3.67a.236.236 0 01.191.17.267.267 0 01-.06.26l-3.108 3.22.734 4.56a.273.273 0 01-.094.25.251.251 0 01-.251.02l-3.841-2.15-3.842 2.15a.214.214 0 01-.12.02zM.723 5.38l2.853 2.96a.277.277 0 01.068.23l-.673 4.18 3.526-1.97a.219.219 0 01.221 0l3.527 1.97-.674-4.18a.284.284 0 01.068-.23l2.853-2.96-3.942-.61a.227.227 0 01-.179-.14L6.608.83 4.844 4.64a.233.233 0 01-.178.13z" fill-rule="evenodd" opacity=".4"></path>
+      </symbol>
+    </defs>
+  </svg>
+  <section class="goods-slider">
+    <div class="goods-slider__wrapper">
+      <div class="goods-slider__top">
+        <h2 class="goods-slider__title">Комплектующие</h2>
+        <button class="goods-slider__show-all" type="button">Посмотреть все</button>
+      </div>
+      <div class="goods-slider__container">
+        <div class="goods-slider__card good-card good-card--first">
+          <header class="good-card__header">
+            <div class="good-card__aside">
+              <button class="good-card__comments-counter" type="button">
+                <svg class="svg-icon" width="12" height="12">
+                  <use xlink:href="#comment-icon"></use>
+                </svg>
+                <span class="visually-hidden">Комментарии</span>
+                <span>5</span>
+              </button>
+              <button class="good-card__rating-counter" type="button">
+                <svg class="svg-icon" width="13" height="17">
+                  <use xlink:href="#star-icon"></use>
+                </svg>
+                <span class="visually-hidden">Рейтинг товара</span>
+                <span>4,5</span>
+              </button>
+            </div>
+          </header>
+          <div class="good-card__content">
+            <div class="good-card__picture">
+              <div class="good-card__overlay overlay">
+                <button class="overlay__text overlay__text--add">Добавить в сравнение</button>
+                <button class="overlay__text overlay__text--remove">Убрать из сравнения</button>
+              </div>
+              <img class="good-card__image" src="images/good--01.jpg" alt="Kartell">
+            </div>
+            <div class="good-card__info">
+              <div class="good-card__main-info">
+                <img class="good-card__country" src="images/flag.png" alt="Product of Germany" width="14" height="10">
+                <h3 class="good-card__name">Kartell</h3>
+                <span class="good-card__availability good-card__availability--available">В наличии</span>
+              </div>
+              <div class="good-card__additional-info">
+                <p class="good-card__description">4 секции радиатор биметаллический Profi BM 350 (BI350-80-80-130)</p>
+                <p class="good-card__vendor-code">Арт: 98257789982577897789</p>
+              </div>
+            </div>
+          </div>
+          <footer class="good-card__footer">
+            <div class="good-card__footer-left-col">
+              <p class="good-card__additional good-card__additional--previous-price"></p>
+              <p class="good-card__current-price">34 932,72 ₽</p>
+            </div>
+            <div class="good-card__footer-right-col">
+              <button class="good-card__add-to-cart" type="button">
+                <svg class="svg-icon" width="12" height="12">
+                  <use xlink:href="#cart-icon"></use>
+                </svg>
+                <span class="visually-hidden">Добавить в корзину</span>
+              </button>
+            </div>
+          </footer>
+        </div>
+        <div class="goods-slider__card good-card">
+          <header class="good-card__header">
+            <div class="good-card__sale-flag">Скидка</div>
+            <div class="good-card__aside">
+              <button class="good-card__comments-counter" type="button">
+                <svg class="svg-icon" width="12" height="12">
+                  <use xlink:href="#comment-icon"></use>
+                </svg>
+                <span class="visually-hidden">Комментарии</span>
+                <span>5</span>
+              </button>
+              <button class="good-card__rating-counter" type="button">
+                <svg class="svg-icon" width="13" height="17">
+                  <use xlink:href="#star-icon"></use>
+                </svg>
+                <span class="visually-hidden">Рейтинг товара</span>
+                <span>4,5</span>
+              </button>
+            </div>
+          </header>
+          <div class="good-card__content">
+            <div class="good-card__picture">
+              <div class="good-card__overlay overlay">
+                <button class="overlay__text overlay__text--add">Добавить в сравнение</button>
+                <button class="overlay__text overlay__text--remove">Убрать из сравнения</button>
+              </div>
+              <img class="good-card__image" src="images/good--02.jpg" alt="Kartell">
+            </div>
+            <div class="good-card__info">
+              <div class="good-card__main-info">
+                <img class="good-card__country" src="images/flag.png" alt="Product of Germany" width="14" height="10">
+                <h3 class="good-card__name">Kartell</h3>
+                <span class="good-card__availability good-card__availability--available">В наличии</span>
+              </div>
+              <div class="good-card__additional-info">
+                <p class="good-card__description">4 секции радиатор биметаллический Profi BM 350 (BI350-80-80-130)</p>
+                <p class="good-card__vendor-code">Арт: 98257789982577897789</p>
+              </div>
+            </div>
+          </div>
+          <footer class="good-card__footer">
+            <div class="good-card__footer-left-col">
+              <p class="good-card__additional good-card__additional--previous-price">42 923,11 ₽</p>
+              <p class="good-card__current-price good-card__current-price--red">34 932,72 ₽</p>
+            </div>
+            <div class="good-card__footer-right-col">
+              <button class="good-card__add-to-cart" type="button">
+                <svg class="svg-icon" width="12" height="12">
+                  <use xlink:href="#cart-icon"></use>
+                </svg>
+                <span class="visually-hidden">Добавить в корзину</span>
+              </button>
+            </div>
+          </footer>
+        </div>
+        <div class="goods-slider__card good-card">
+          <header class="good-card__header">
+            <div class="good-card__aside">
+              <button class="good-card__comments-counter" type="button">
+                <svg class="svg-icon" width="12" height="12">
+                  <use xlink:href="#comment-icon"></use>
+                </svg>
+                <span class="visually-hidden">Комментарии</span>
+                <span>5</span>
+              </button>
+              <button class="good-card__rating-counter" type="button">
+                <svg class="svg-icon" width="13" height="17">
+                  <use xlink:href="#star-icon"></use>
+                </svg>
+                <span class="visually-hidden">Рейтинг товара</span>
+                <span>4,5</span>
+              </button>
+            </div>
+          </header>
+          <div class="good-card__content">
+            <div class="good-card__picture">
+              <div class="good-card__overlay overlay">
+                <button class="overlay__text overlay__text--add">Добавить в сравнение</button>
+                <button class="overlay__text overlay__text--remove">Убрать из сравнения</button>
+              </div>
+              <img class="good-card__image" src="images/good--03.jpg" alt="Kartell">
+            </div>
+            <div class="good-card__info">
+              <div class="good-card__main-info">
+                <img class="good-card__country" src="images/flag.png" alt="Product of Germany" width="14" height="10">
+                <h3 class="good-card__name">Kartell</h3>
+                <span class="good-card__availability good-card__availability--not-available">Нет в наличии</span>
+              </div>
+              <div class="good-card__additional-info">
+                <p class="good-card__description">4 секции радиатор биметаллический Profi BM 350 (BI350-80-80-130)</p>
+                <p class="good-card__vendor-code">Арт: 98257789982577897789</p>
+              </div>
+            </div>
+          </div>
+          <footer class="good-card__footer">
+            <div class="good-card__footer-left-col">
+              <p class="good-card__additional good-card__additional--previous-price"></p>
+              <p class="good-card__current-price">34 932,72 ₽</p>
+            </div>
+            <div class="good-card__footer-right-col">
+              <button class="good-card__add-to-cart" type="button">
+                <svg class="svg-icon" width="12" height="12">
+                  <use xlink:href="#cart-icon"></use>
+                </svg>
+                <span class="visually-hidden">Добавить в корзину</span>
+              </button>
+            </div>
+          </footer>
+        </div>
+        <div class="goods-slider__card good-card">
+          <header class="good-card__header">
+            <div class="good-card__aside">
+              <button class="good-card__comments-counter" type="button">
+                <svg class="svg-icon" width="12" height="12">
+                  <use xlink:href="#comment-icon"></use>
+                </svg>
+                <span class="visually-hidden">Комментарии</span>
+                <span>5</span>
+              </button>
+              <button class="good-card__rating-counter" type="button">
+                <svg class="svg-icon" width="13" height="17">
+                  <use xlink:href="#star-icon"></use>
+                </svg>
+                <span class="visually-hidden">Рейтинг товара</span>
+                <span>4,5</span>
+              </button>
+            </div>
+          </header>
+          <div class="good-card__content">
+            <div class="good-card__picture">
+              <div class="good-card__overlay overlay">
+                <button class="overlay__text overlay__text--add">Добавить в сравнение</button>
+                <button class="overlay__text overlay__text--remove">Убрать из сравнения</button>
+              </div>
+              <img class="good-card__image" src="images/good--04.jpg" alt="Kartell">
+            </div>
+            <div class="good-card__info">
+              <div class="good-card__main-info">
+                <img class="good-card__country" src="images/flag.png" alt="Product of Germany" width="14" height="10">
+                <h3 class="good-card__name">Kartell</h3>
+                <span class="good-card__availability good-card__availability--available">В наличии</span>
+              </div>
+              <div class="good-card__additional-info">
+                <p class="good-card__description">4 секции радиатор биметаллический Profi BM 350 (BI350-80-80-130)</p>
+                <p class="good-card__vendor-code">Арт: 98257789982577897789</p>
+              </div>
+            </div>
+          </div>
+          <footer class="good-card__footer">
+            <div class="good-card__footer-left-col">
+              <p class="good-card__additional good-card__additional--hurry-up">Успей купить <span>?</span></p>
+              <p class="good-card__current-price">34 932,72 ₽</p>
+            </div>
+            <div class="good-card__footer-right-col">
+              <button class="good-card__add-to-cart" type="button">
+                <svg class="svg-icon" width="12" height="12">
+                  <use xlink:href="#cart-icon"></use>
+                </svg>
+                <span class="visually-hidden">Добавить в корзину</span>
+              </button>
+            </div>
+          </footer>
+        </div>
+        <div class="goods-slider__card good-card">
+          <header class="good-card__header">
+            <div class="good-card__aside">
+              <button class="good-card__comments-counter" type="button">
+                <svg class="svg-icon" width="12" height="12">
+                  <use xlink:href="#comment-icon"></use>
+                </svg>
+                <span class="visually-hidden">Комментарии</span>
+                <span>5</span>
+              </button>
+              <button class="good-card__rating-counter" type="button">
+                <svg class="svg-icon" width="13" height="17">
+                  <use xlink:href="#star-icon"></use>
+                </svg>
+                <span class="visually-hidden">Рейтинг товара</span>
+                <span>4,5</span>
+              </button>
+            </div>
+          </header>
+          <div class="good-card__content">
+            <div class="good-card__picture">
+              <div class="good-card__overlay overlay">
+                <button class="overlay__text overlay__text--add">Добавить в сравнение</button>
+                <button class="overlay__text overlay__text--remove">Убрать из сравнения</button>
+              </div>
+              <img class="good-card__image" src="images/good--05.jpg" alt="Kartell">
+            </div>
+            <div class="good-card__info">
+              <div class="good-card__main-info">
+                <img class="good-card__country" src="images/flag.png" alt="Product of Germany" width="14" height="10">
+                <h3 class="good-card__name">Kartell</h3>
+                <span class="good-card__availability good-card__availability--available">В наличии</span>
+              </div>
+              <div class="good-card__additional-info">
+                <p class="good-card__description">4 секции радиатор биметаллический Profi BM 350 (BI350-80-80-130)</p>
+                <p class="good-card__vendor-code">Арт: 98257789982577897789</p>
+              </div>
+            </div>
+          </div>
+          <footer class="good-card__footer">
+            <div class="good-card__footer-left-col">
+              <p class="good-card__additional good-card__additional--hurry-up">Успей купить <span>?</span></p>
+              <p class="good-card__current-price">34 932,72 ₽</p>
+            </div>
+            <div class="good-card__footer-right-col">
+              <button class="good-card__add-to-cart" type="button">
+                <svg class="svg-icon" width="12" height="12">
+                  <use xlink:href="#cart-icon"></use>
+                </svg>
+                <span class="visually-hidden">Добавить в корзину</span>
+              </button>
+            </div>
+          </footer>
+        </div>
+        <div class="goods-slider__card good-card">
+          <header class="good-card__header">
+            <div class="good-card__aside">
+              <button class="good-card__comments-counter" type="button">
+                <svg class="svg-icon" width="12" height="12">
+                  <use xlink:href="#comment-icon"></use>
+                </svg>
+                <span class="visually-hidden">Комментарии</span>
+                <span>5</span>
+              </button>
+              <button class="good-card__rating-counter" type="button">
+                <svg class="svg-icon" width="13" height="17">
+                  <use xlink:href="#star-icon"></use>
+                </svg>
+                <span class="visually-hidden">Рейтинг товара</span>
+                <span>4,5</span>
+              </button>
+            </div>
+          </header>
+          <div class="good-card__content">
+            <div class="good-card__picture">
+              <div class="good-card__overlay overlay">
+                <button class="overlay__text overlay__text--add">Добавить в сравнение</button>
+                <button class="overlay__text overlay__text--remove">Убрать из сравнения</button>
+              </div>
+              <img class="good-card__image" src="images/good--06.jpg" alt="Kartell">
+            </div>
+            <div class="good-card__info">
+              <div class="good-card__main-info">
+                <img class="good-card__country" src="images/flag.png" alt="Product of Germany" width="14" height="10">
+                <h3 class="good-card__name">Kartell</h3>
+                <span class="good-card__availability good-card__availability--not-available">Нет в наличии</span>
+              </div>
+              <div class="good-card__additional-info">
+                <p class="good-card__description">4 секции радиатор биметаллический Profi BM 350 (BI350-80-80-130)</p>
+                <p class="good-card__vendor-code">Арт: 98257789982577897789</p>
+              </div>
+            </div>
+          </div>
+          <footer class="good-card__footer">
+            <div class="good-card__footer-left-col">
+              <p class="good-card__additional good-card__additional--hurry-up">Успей купить <span>?</span></p>
+              <p class="good-card__current-price">34 932,72 ₽</p>
+            </div>
+            <div class="good-card__footer-right-col">
+              <button class="good-card__add-to-cart" type="button">
+                <svg class="svg-icon" width="12" height="12">
+                  <use xlink:href="#cart-icon"></use>
+                </svg>
+                <span class="visually-hidden">Добавить в корзину</span>
+              </button>
+            </div>
+          </footer>
+        </div>
+      </div>
+      <button class="goods-slider__button goods-slider__button--previous"><span class="visually-hidden">Назад</span></button>
+      <button class="goods-slider__button goods-slider__button--next goods-slider__button--show"><span class="visually-hidden">Вперёд</span></button>
+    </div>
+  </section>
+  <script src="js/script.js"></script>
+</body>
+</html>
