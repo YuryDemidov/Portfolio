@@ -82,9 +82,19 @@ body {
 }
 
 .site__preview:hover {
-  border-color: #ff0000;
-
   cursor: pointer;
+}
+
+.site--helyfly .site__preview:hover {
+  border-color: #fc9b09;
+}
+
+.site--shopy .site__preview:hover {
+  border-color: #ff5912;
+}
+
+.site--sparta .site__preview:hover {
+  border-color: #ff0000;
 }
 
 .preview__picture {
@@ -124,6 +134,16 @@ body {
   text-decoration: none;
 }
 
+.site--helyfly .site__code a {
+  color: #fc9b09;
+
+  border-bottom: 1px solid rgba(252, 155, 9, 0.3);
+}
+
+.site--helyfly .site__code a:hover {
+  border-bottom: 1px solid rgba(252, 155, 9, 1);
+}
+
 .site--shopy .site__code a {
   color: #ff5912;
 
@@ -141,7 +161,7 @@ body {
 }
 
 .site--sparta .site__code a:hover {
-  border-bottom: 1px solid rgba(255, 89, 18, 1);
+  border-bottom: 1px solid rgba(255, 0, 0, 1);
 }
 
 .site__design {
@@ -219,12 +239,6 @@ initialized with JS by clicking on preview picture*/
 }
 
 .preview__flex-container {
-  position: absolute;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -237,6 +251,43 @@ initialized with JS by clicking on preview picture*/
 .site__picture--visible {
   display: block;
   width: 100%;
+}
+
+.site--helyfly .description--first {
+  min-height: 70px;
+  margin-top: 190px;
+}
+
+.site--helyfly .description--second {
+  min-height: 70px;
+  margin-top: 55px;
+  margin-bottom: 0;
+}
+
+.site--helyfly .description--fourth {
+  margin-top: 100px;
+}
+
+.site--helyfly .description--fifth {
+  margin-top: 150px;
+}
+
+.site--helyfly .description--sixth {
+  min-height: 45px;
+  margin-top: 125px;
+}
+
+.site--helyfly .description--seventh {
+  margin-top: 90px;
+}
+
+.site--helyfly .description--eighth {
+  min-height: 95px;
+  margin-top: 160px;
+}
+
+.site--helyfly .description--ninth {
+  margin-top: 200px;
 }
 
 .site--shopy .description--first {
@@ -254,6 +305,10 @@ initialized with JS by clicking on preview picture*/
 
 .site--shopy .description--fourth {
   margin-top: 210px;
+}
+
+.site--shopy .description--fifth {
+  margin-top: 540px;
 }
 
 .site--sparta .description--first {
@@ -289,10 +344,14 @@ initialized with JS by clicking on preview picture*/
   min-height: 45px;
 }
 
-.site--sparta .description--eight {
+.site--sparta .description--eighth {
   min-height: 70px;
   margin-top: 270px;
   margin-bottom: 0;
+}
+
+.site--sparta .description--ninth {
+  min-height: 70px;
 }
 
 .site--sparta .description--tenth {
@@ -309,14 +368,14 @@ initialized with JS by clicking on preview picture*/
 }
 
 .site--sparta .description--thirteenth {
+  min-height: 115px;
   margin-top: 400px;
 }
 
-.description:nth-last-child(2) {
-  margin-bottom: auto;
+.site--sparta .description--fourteenth {
+  margin-top: 0;
 }
 
 .description:last-child {
-  margin-top: auto;
-  margin-bottom: 10px;
+  margin-bottom: 0;
 }
